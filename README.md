@@ -86,7 +86,6 @@ Exact counts are not shown because the data is confidential.
 
 - **See which organism is rising.** KPI cards show each MDRO type's isolation rate and its change from last month.
 - **Catch rising hospital-acquired cases early.** The 48-hour indicator is designed to flag increases sooner.
-- **Feedback:** after reviewing the prototype, an infection control practitioner said a ward-based dashboard "would make the situation clear at a glance."
 
 **Limitations**
 - This is a prototype that was not deployed.
