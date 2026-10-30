@@ -101,4 +101,4 @@ Exact counts are not shown because the data is confidential.
 
 ## Note on AI assistance
 
-I used AI tools ([tool names]) for coding help while building the queries, and later to translate the comments into English and tidy the file. The analysis design — MDRO definitions, WHO GLASS deduplication, the 48-hour split and the dashboard structure — is my own.
+I used AI tools ([Chat GPT, Claude]) for coding help while building the queries, and later to tidy the file. The analysis design — MDRO definitions, WHO GLASS deduplication, the 48-hour split and the dashboard structure — is my own.
