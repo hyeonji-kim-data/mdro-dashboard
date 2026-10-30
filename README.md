@@ -2,7 +2,7 @@
 
 Aggregated hospital microbiology test results under international surveillance rules (WHO GLASS) and built a **prototype** Tableau dashboard designed to let the infection control team see multidrug-resistant organism (MDRO) activity on a single screen.
 
-- **Type:** Bootcamp team project (5 members), Jun–Aug 2025
+- **Type:** Oracle Academy team project (5 members), Jun–Aug 2025
 - **My role:** Data extraction and transformation (SQL), statistics dashboard (Tableau)
 - **Tools:** Oracle SQL, Tableau
 - **Portfolio page:** [link]
@@ -21,7 +21,7 @@ Antimicrobial-resistant infections raise mortality, length of stay and medical c
 
 ## 2. Team scope and data
 
-- **Team project:** an infection response platform with four parts: lab report structuring (NLP), an alert system, a chatbot and a statistics dashboard. **I built the statistics dashboard**, including all SQL in this repository.
+- **Team project:** an infection response platform with four parts: lab report structuring (NLP), an alert system, a chatbot and a statistics dashboard. **I built the dashboard**, including all SQL in this repository.
 - **Data:** microbiology culture results over 3.5 years (Jul 2020 – Dec 2023). Teammates structured the free-text lab reports into one table, `parsed_data_final`, with one row per test × organism × antibiotic.
 - **Main columns used:** patient ID, sex, birth date, organism, specimen type, antibiotic, susceptibility result (S/I/R), test date, admission date, inpatient flag, ward code
 
