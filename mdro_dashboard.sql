@@ -565,6 +565,8 @@ SELECT * FROM patient_gender_age_summary;
 
 -- ---------------------------------------------------------------------
 -- 3-2. Top 5 organisms by sex and season
+-- The five most frequently detected organisms over the full study period,
+-- identified first and fixed below so every period compares the same five.
 -- ---------------------------------------------------------------------
 
 -- Detections of the top 5 organisms by sex, per month
