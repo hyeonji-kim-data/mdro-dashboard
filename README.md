@@ -47,7 +47,7 @@ Each result is labeled with an MDRO type when the organism and antibiotic result
 | 1. Classify | Label each result by MDRO type and keep MDRO rows | `mdro_view_stage1` |
 | 2. Deduplicate | **WHO GLASS:** keep the first isolate per patient, specimen type, organism and year (window function `ROW_NUMBER`) | `mdro_view_stage2` |
 | 3. Inpatients | Keep admitted patients only | `mdro_view_stage3` |
-| 4. 48-hour split | More than 2 days after admission = hospital-acquired; otherwise community-onset | `mdro_view_stage4` |
+| 4. 48-hour split | Detected more than 48 hours (2 calendar days) after admission = **hospital-onset**, a proxy for hospital-acquired infection; within 48 hours = community-onset | `mdro_view_stage4` |
 | 5. Aggregate | Monthly counts by MDRO type, with **0 filled in for months with no detections** so trend lines stay continuous | `mdro_view_stage5` and the chart views below |
 
 ## 5. Dashboard structure
@@ -70,6 +70,7 @@ Three tabs, with year, month, organism and ward filters.
 - **Isolation rate (KPI cards)** = MDRO isolates ÷ all isolates in the month × 100. The card also shows the change from the previous month (`LAG`).
 - **Blood vs. non-blood:** specimen type "Whole Blood" vs. all others, to monitor high-risk bloodstream infections separately.
 - **Resistance rate:** share of S, I and R results per organism, specimen and antibiotic, using the first isolate per patient and year.
+- **Top 5 organisms:** the five most frequently detected organisms over the full study period (E. coli, S. aureus, E. faecalis, P. aeruginosa, and K. pneumoniae) were identified first and then fixed in the queries, ensuring that the charts compare the same organisms across all periods.
 
 <!-- Dashboard screenshot (rebuilt with synthetic data):
 <p align="center"><img src="figures/mdro-dashboard.png" alt="Prototype MDRO dashboard rebuilt with synthetic data" width="800"></p>
